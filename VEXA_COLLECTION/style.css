@@ -1,0 +1,2200 @@
+/* =========================================================
+   VEXA CLOTHING STORE
+   COMPLETE CSS
+   ========================================================= */
+
+
+/* =========================================================
+   1. RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   2. ANNOUNCEMENT BAR
+   ========================================================= */
+
+.announcement {
+    width: 100%;
+    height: 35px;
+
+    background: #080808;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   3. HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+    height: 78px;
+
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #eeeeee;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   4. LOGO
+   ========================================================= */
+
+.logo a {
+    font-size: 30px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    color: #111111;
+}
+
+
+.logo span {
+    color: #b18a4a;
+}
+
+
+/* =========================================================
+   5. NAVIGATION
+   ========================================================= */
+
+#navigation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+#navigation a {
+    position: relative;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+
+    color: #222222;
+
+    transition: 0.3s ease;
+}
+
+
+#navigation a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 1px;
+
+    background: #b18a4a;
+
+    transition: 0.3s ease;
+}
+
+
+#navigation a:hover {
+    color: #b18a4a;
+}
+
+
+#navigation a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   6. HEADER ICONS
+   ========================================================= */
+
+.header-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.header-icons button {
+    border: none;
+
+    background: transparent;
+
+    color: #111111;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+}
+
+
+.header-icons button:hover {
+    color: #b18a4a;
+}
+
+
+#cartCount {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 18px;
+    height: 18px;
+
+    margin-left: 3px;
+
+    border-radius: 50%;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   7. HERO SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 620px;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    background: #090909;
+
+    color: #ffffff;
+}
+
+
+.hero-content {
+    padding: 80px 10%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+.eyebrow {
+    margin-bottom: 22px;
+
+    color: #b18a4a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.hero h1 {
+    margin-bottom: 25px;
+
+    font-size: clamp(55px, 7vw, 95px);
+
+    font-weight: 700;
+
+    line-height: 0.88;
+
+    letter-spacing: -4px;
+}
+
+
+.hero h1 em {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: 400;
+}
+
+
+.hero-description {
+    max-width: 420px;
+
+    margin-bottom: 30px;
+
+    color: #aaaaaa;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   8. HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 25px;
+
+    border: 1px solid #ffffff;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+
+.button:hover {
+    background: #b18a4a;
+
+    border-color: #b18a4a;
+
+    color: #ffffff;
+}
+
+
+.hero-buttons .button:last-child {
+    background: transparent;
+
+    color: #ffffff;
+}
+
+
+.hero-buttons .button:last-child:hover {
+    background: #ffffff;
+
+    color: #111111;
+}
+
+
+/* =========================================================
+   9. HERO IMAGE
+   ========================================================= */
+
+.hero-image {
+    width: 100%;
+    height: 620px;
+
+    overflow: hidden;
+
+    background: #222222;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   10. BENEFITS
+   ========================================================= */
+
+.benefits {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #090909;
+
+    color: #ffffff;
+
+    padding: 25px 5%;
+}
+
+
+.benefit {
+    padding: 10px 20px;
+
+    border-right: 1px solid #333333;
+}
+
+
+.benefit:last-child {
+    border-right: none;
+}
+
+
+.benefit h3 {
+    margin-bottom: 5px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.benefit p {
+    color: #888888;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   11. GENERAL SECTION
+   ========================================================= */
+
+.collections,
+.shop,
+.brand-statement,
+.newsletter {
+    padding: 90px 5%;
+}
+
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+
+.section-heading p {
+    margin-bottom: 10px;
+
+    color: #b18a4a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+.section-heading h2 {
+    font-size: 45px;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   12. COLLECTION CATEGORY GRID
+   ========================================================= */
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.category-card {
+    height: 350px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+
+.category-card::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 55%;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.8)
+        );
+
+    z-index: 1;
+}
+
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.category-card:hover img {
+    transform: scale(1.07);
+}
+
+
+.category-card h3 {
+    position: absolute;
+
+    left: 22px;
+    bottom: 20px;
+
+    z-index: 2;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   13. SHOP SECTION
+   ========================================================= */
+
+.shop {
+    background: #f5f4f1;
+}
+
+
+.shop-tools {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+#searchInput {
+    width: 350px;
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5d5d5;
+
+    outline: none;
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+
+#searchInput:focus {
+    border-color: #111111;
+}
+
+
+#sortProducts {
+    height: 48px;
+
+    padding: 0 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5d5d5;
+
+    outline: none;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   14. FILTER BUTTONS
+   ========================================================= */
+
+.filters {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 35px;
+}
+
+
+.filters button {
+    padding: 11px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #cccccc;
+
+    color: #222222;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+
+.filters button:hover {
+    background: #111111;
+
+    border-color: #111111;
+
+    color: #ffffff;
+}
+
+
+.filters button.active {
+    background: #111111;
+
+    border-color: #111111;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   15. PRODUCTS GRID
+   ========================================================= */
+
+.products {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   16. PRODUCT CARD
+   ========================================================= */
+
+.product {
+    min-width: 0;
+
+    background: #ffffff;
+
+    position: relative;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.product:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   17. PRODUCT IMAGE
+   ========================================================= */
+
+.product-image {
+    width: 100%;
+
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.product:hover .product-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   18. WISHLIST
+   ========================================================= */
+
+.wishlist {
+    width: 38px;
+    height: 38px;
+
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 20px;
+
+    z-index: 5;
+
+    transition: 0.3s ease;
+}
+
+
+.wishlist:hover {
+    background: #111111;
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   19. ADD TO CART BUTTON
+   ========================================================= */
+
+.add-to-cart {
+    position: absolute;
+
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    height: 44px;
+
+    border: none;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+    z-index: 5;
+}
+
+
+.product:hover .add-to-cart {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+.add-to-cart:hover {
+    background: #b18a4a;
+}
+
+
+/* =========================================================
+   20. PRODUCT INFORMATION
+   ========================================================= */
+
+.product-info {
+    padding: 16px 5px 25px;
+}
+
+
+.product-info h3 {
+    margin-bottom: 6px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #111111;
+}
+
+
+.product-info p {
+    margin-bottom: 10px;
+
+    color: #888888;
+
+    font-size: 10px;
+}
+
+
+.product-info strong {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #111111;
+}
+
+
+/* =========================================================
+   21. BRAND STATEMENT
+   ========================================================= */
+
+.brand-statement {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: #090909;
+
+    color: #ffffff;
+}
+
+
+.brand-statement > div:first-child p {
+    margin-bottom: 15px;
+
+    color: #b18a4a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.brand-statement h2 {
+    font-size: 65px;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+}
+
+
+.brand-statement h2 em {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: 400;
+}
+
+
+.brand-statement > div:last-child p {
+    max-width: 500px;
+
+    color: #999999;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   22. NEWSLETTER
+   ========================================================= */
+
+.newsletter {
+    text-align: center;
+
+    background: #f5f4f1;
+}
+
+
+.newsletter h2 {
+    margin-bottom: 10px;
+
+    font-size: 42px;
+}
+
+
+.newsletter > p {
+    margin-bottom: 25px;
+
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+.newsletter form {
+    max-width: 500px;
+
+    margin: auto;
+
+    display: flex;
+}
+
+
+.newsletter input {
+    flex: 1;
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #cccccc;
+
+    background: #ffffff;
+
+    outline: none;
+
+    font-size: 11px;
+}
+
+
+.newsletter form button {
+    height: 48px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.newsletter form button:hover {
+    background: #b18a4a;
+}
+
+
+/* =========================================================
+   23. FOOTER
+   ========================================================= */
+
+footer {
+    padding: 65px 5% 25px;
+
+    background: #050505;
+
+    color: #ffffff;
+}
+
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 50px;
+
+    padding-bottom: 45px;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.footer-brand h2 {
+    margin-bottom: 5px;
+
+    font-size: 30px;
+
+    letter-spacing: 5px;
+}
+
+
+.footer-brand h2 span {
+    color: #b18a4a;
+}
+
+
+.footer-brand p {
+    color: #777777;
+
+    font-size: 11px;
+}
+
+
+.footer-content h3 {
+    margin-bottom: 18px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.footer-content a {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-content a:hover {
+    color: #b18a4a;
+}
+
+
+.footer-bottom {
+    padding-top: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #666666;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   24. PRODUCT MODAL
+   ========================================================= */
+
+.product-modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    z-index: 5000;
+}
+
+
+.product-modal.open {
+    display: flex;
+}
+
+
+.modal-box {
+    width: min(950px, 95vw);
+
+    max-height: 90vh;
+
+    overflow: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    position: relative;
+
+    background: #ffffff;
+}
+
+
+.modal-photo {
+    min-height: 550px;
+
+    background: #eeeeee;
+}
+
+
+.modal-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.modal-info {
+    padding: 45px;
+}
+
+
+.modal-cat {
+    margin-bottom: 10px;
+
+    color: #b18a4a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.modal-info h2 {
+    margin-bottom: 15px;
+
+    font-size: 34px;
+
+    line-height: 1.1;
+}
+
+
+.modal-price {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   25. MODAL CLOSE BUTTON
+   ========================================================= */
+
+.close-btn {
+    width: 38px;
+    height: 38px;
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 20px;
+
+    z-index: 10;
+}
+
+
+.close-btn:hover {
+    background: #111111;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   26. PRODUCT OPTIONS
+   ========================================================= */
+
+.modal-info label {
+    display: block;
+
+    margin: 20px 0 8px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.option-row {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.option-row button {
+    padding: 10px 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #cccccc;
+
+    font-size: 10px;
+}
+
+
+.option-row button:hover,
+.option-row button.selected {
+    background: #111111;
+
+    border-color: #111111;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   27. QUANTITY
+   ========================================================= */
+
+.qty-row {
+    width: max-content;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #cccccc;
+}
+
+
+.qty-row button {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    background: #ffffff;
+
+    font-size: 16px;
+}
+
+
+.qty-row span {
+    width: 40px;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   28. MODAL ADD BUTTON
+   ========================================================= */
+
+.modal-add {
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.modal-add:hover {
+    background: #b18a4a;
+}
+
+
+/* =========================================================
+   29. CART DRAWER
+   ========================================================= */
+
+.cart-drawer {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    z-index: 6000;
+}
+
+
+.cart-drawer.open {
+    display: block;
+}
+
+
+.cart-panel {
+    width: min(430px, 95vw);
+
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: #ffffff;
+}
+
+
+.cart-head {
+    padding-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.cart-head h2 {
+    font-size: 25px;
+}
+
+
+.cart-items {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 15px 0;
+}
+
+
+.cart-item {
+    display: grid;
+
+    grid-template-columns: 70px 1fr auto;
+
+    gap: 12px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.cart-item img {
+    width: 70px;
+    height: 80px;
+
+    object-fit: cover;
+}
+
+
+.cart-item h4 {
+    margin-bottom: 5px;
+
+    font-size: 11px;
+}
+
+
+.cart-item p {
+    color: #777777;
+
+    font-size: 10px;
+}
+
+
+.cart-item > button {
+    align-self: start;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777777;
+
+    font-size: 10px;
+}
+
+
+.cart-item > button:hover {
+    color: #111111;
+}
+
+
+.cart-total {
+    padding-top: 20px;
+
+    border-top: 1px solid #dddddd;
+}
+
+
+.cart-total-line {
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.checkout-btn {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.checkout-btn:hover {
+    background: #b18a4a;
+}
+
+
+/* =========================================================
+   30. ACCOUNT MODAL
+   ========================================================= */
+
+.account-modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    z-index: 7000;
+}
+
+
+.account-modal.open {
+    display: flex;
+}
+
+
+.account-box {
+    width: min(430px, 95vw);
+
+    position: relative;
+
+    padding: 40px;
+
+    background: #ffffff;
+}
+
+
+.account-box h2 {
+    margin-bottom: 8px;
+
+    font-size: 28px;
+}
+
+
+.account-box > p {
+    margin-bottom: 20px;
+
+    color: #777777;
+
+    font-size: 11px;
+}
+
+
+.account-box input {
+    width: 100%;
+
+    height: 46px;
+
+    margin-bottom: 12px;
+
+    padding: 0 13px;
+
+    border: 1px solid #cccccc;
+
+    outline: none;
+
+    font-size: 11px;
+}
+
+
+.account-box input:focus {
+    border-color: #111111;
+}
+
+
+.account-box .primary {
+    width: 100%;
+
+    height: 46px;
+
+    border: none;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.account-box .primary:hover {
+    background: #b18a4a;
+}
+
+
+.account-switch {
+    margin-top: 18px;
+
+    color: #888888;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   31. TOAST MESSAGE
+   ========================================================= */
+
+#toast {
+    position: fixed;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform:
+        translateX(-50%)
+        translateY(30px);
+
+    padding: 14px 22px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 10000;
+
+    transition: 0.3s ease;
+}
+
+
+#toast.show {
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+
+/* =========================================================
+   32. MOBILE MENU BUTTON
+   ========================================================= */
+
+.menu-button {
+    display: none !important;
+}
+
+
+/* =========================================================
+   33. TABLET RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    #navigation {
+        gap: 18px;
+    }
+
+
+    .products {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+
+    .product-image {
+        height: 360px;
+    }
+
+
+    .category-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   34. TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+
+    #navigation {
+        gap: 15px;
+    }
+
+
+    #navigation a {
+        font-size: 9px;
+    }
+
+
+    .header-icons button {
+        font-size: 9px;
+    }
+
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-content {
+        min-height: 500px;
+
+        padding: 70px 8%;
+    }
+
+
+    .hero-image {
+        height: 500px;
+    }
+
+
+    .benefits {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .benefit {
+        padding: 15px;
+
+        border-bottom: 1px solid #333333;
+    }
+
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .brand-statement {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .footer-content {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   35. MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .announcement {
+        height: 30px;
+
+        padding: 0 10px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+
+        text-align: center;
+    }
+
+
+    header {
+        height: 65px;
+
+        padding: 0 5%;
+    }
+
+
+    .logo a {
+        font-size: 24px;
+
+        letter-spacing: 4px;
+    }
+
+
+    #navigation {
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 15px 5%;
+
+        background: #ffffff;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    #navigation.show {
+        display: flex;
+    }
+
+
+    #navigation a {
+        width: 100%;
+
+        padding: 13px 0;
+
+        font-size: 10px;
+    }
+
+
+    .menu-button {
+        display: inline-block !important;
+    }
+
+
+    .header-icons {
+        gap: 8px;
+    }
+
+
+    .header-icons button {
+        font-size: 8px;
+    }
+
+
+    .header-icons button:nth-child(1),
+    .header-icons button:nth-child(2),
+    .header-icons button:nth-child(3) {
+        display: none;
+    }
+
+
+    .hero-content {
+        min-height: 480px;
+
+        padding: 60px 7%;
+    }
+
+
+    .hero h1 {
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .button {
+        min-height: 45px;
+
+        padding: 0 20px;
+    }
+
+
+    .hero-image {
+        height: 380px;
+    }
+
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+
+    .benefit {
+        border-right: none;
+    }
+
+
+    .collections,
+    .shop,
+    .brand-statement,
+    .newsletter {
+        padding: 60px 5%;
+    }
+
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .category-card {
+        height: 230px;
+    }
+
+
+    .category-card h3 {
+        left: 13px;
+        bottom: 13px;
+
+        font-size: 10px;
+    }
+
+
+    .shop-tools {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    #searchInput,
+    #sortProducts {
+        width: 100%;
+    }
+
+
+    .filters {
+        gap: 6px;
+    }
+
+
+    .filters button {
+        padding: 9px 11px;
+
+        font-size: 8px;
+    }
+
+
+    .products {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+
+    .product-image {
+        height: 270px;
+    }
+
+
+    .product-info {
+        padding: 12px 3px 20px;
+    }
+
+
+    .product-info h3 {
+        font-size: 11px;
+    }
+
+
+    .product-info p {
+        font-size: 9px;
+    }
+
+
+    .product-info strong {
+        font-size: 11px;
+    }
+
+
+    .add-to-cart {
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+
+        height: 38px;
+
+        opacity: 1;
+
+        transform: none;
+
+        font-size: 8px;
+    }
+
+
+    .wishlist {
+        width: 32px;
+        height: 32px;
+
+        top: 8px;
+        right: 8px;
+
+        font-size: 17px;
+    }
+
+
+    .brand-statement h2 {
+        font-size: 48px;
+    }
+
+
+    .brand-statement > div:last-child p {
+        font-size: 12px;
+    }
+
+
+    .newsletter h2 {
+        font-size: 32px;
+    }
+
+
+    .newsletter form {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .newsletter input,
+    .newsletter form button {
+        width: 100%;
+    }
+
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .modal-box {
+        width: 95vw;
+
+        grid-template-columns: 1fr;
+
+        max-height: 92vh;
+    }
+
+
+    .modal-photo {
+        height: 320px;
+
+        min-height: 0;
+    }
+
+
+    .modal-info {
+        padding: 30px;
+    }
+
+
+    .modal-info h2 {
+        font-size: 27px;
+    }
+
+
+    .cart-panel {
+        width: 95vw;
+    }
+
+
+    .account-box {
+        padding: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   36. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .category-card {
+        height: 280px;
+    }
+
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .product-image {
+        height: 230px;
+    }
+
+
+    .brand-statement h2 {
+        font-size: 40px;
+    }
+
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   END OF VEXA CSS
+   ========================================================= */
